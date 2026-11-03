@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env*
+screenshots/
+test-results/
+playwright-report/
+bindex-reference/
+.DS_Store
+Thumbs.db
+*.log
