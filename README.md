@@ -125,7 +125,7 @@ Diğer metinler doğrudan `public/index.html` içindedir.
 
 1. Repo'yu GitHub'a pushlayın (aşağıya bakın).
 2. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-3. GitHub hesabını yetkilendirin, `bindex` reposunu seçin.
+3. GitHub hesabını yetkilendirin, `B-ndextr` reposunu seçin.
 4. Build ayarları:
    - **Production branch:** `main`
    - **Framework preset:** None
@@ -146,11 +146,11 @@ npm run deploy       # npx wrangler pages deploy public --project-name=bindex
 ## GitHub
 
 ```bash
-git remote add origin https://github.com/emrearslan01/bindex.git   # zaten ekli
+git remote add origin https://github.com/emrearslan01/B-ndextr.git   # zaten ekli
 git push -u origin main
 ```
 
-Repo yoksa önce github.com/new üzerinden `bindex` adıyla (README eklemeden) oluşturun, ya da
+Repo yoksa önce github.com/new üzerinden (ör. `B-ndextr` adıyla, README eklemeden) oluşturun, ya da
 [GitHub CLI](https://cli.github.com/) ile: `gh repo create bindex --public --source=. --push`.
 
 ## Notlar
