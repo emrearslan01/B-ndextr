@@ -5,7 +5,7 @@
 // ==========================================================================
 
 /** Live URL of the site. Used for the footer QR code and the footer link. */
-export const SITE_URL = 'https://bindex.pages.dev/';
+export const SITE_URL = 'https://bindextr.com/';
 
 /** Text shown next to the footer QR link (defaults to the host of SITE_URL). */
 export const SITE_LABEL = new URL(SITE_URL).host;
