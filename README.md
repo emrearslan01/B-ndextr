@@ -140,7 +140,7 @@ CLI ile doğrudan deploy (Git bağlamadan):
 
 ```bash
 npx wrangler login
-npm run deploy       # npx wrangler pages deploy public --project-name=bindex
+npm run deploy       # npx wrangler pages deploy public --project-name=b-ndextr
 ```
 
 ## GitHub

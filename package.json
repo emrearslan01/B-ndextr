@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx wrangler pages dev public",
-    "deploy": "npx wrangler pages deploy public --project-name=bindex",
+    "deploy": "npx wrangler pages deploy public --project-name=b-ndextr",
     "images": "node scripts/optimize-images.mjs",
     "icons": "node scripts/make-icons.mjs",
     "shots": "node scripts/screenshots.mjs"
