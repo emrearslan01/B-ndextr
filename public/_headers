@@ -1,0 +1,35 @@
+# Cloudflare Pages headers — https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  X-Frame-Options: SAMEORIGIN
+  Cross-Origin-Opener-Policy: same-origin
+
+# HTML: always revalidate so content updates are visible immediately
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS / JS are not fingerprinted: short cache + revalidate
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Service worker must never be cached
+/sw.js
+  Cache-Control: no-cache
+
+# Static assets, fonts, vendor libs: long-lived & immutable.
+# If you replace a file here, give it a new name (e.g. bindex-colors-v2.avif).
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/*
+  Access-Control-Allow-Origin: *
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
